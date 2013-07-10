@@ -7,7 +7,7 @@ from django.core.urlresolvers import reverse
 from myproject.myapp.models import Document
 from myproject.myapp.forms import DocumentForm
 
-def list(request):
+def mylist(request):
     # Handle file upload
     if request.method == 'POST':
         form = DocumentForm(request.POST, request.FILES)
